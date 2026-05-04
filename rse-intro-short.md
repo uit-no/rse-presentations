@@ -212,6 +212,17 @@ rewrite from Matlab to Python+Rust using a more optimal algorithm
 
 ---
 
+# Example 4
+
+
+<img src="img/speedyweather.png" style="width: 100%;"/>
+
+- Ported to AMD GPUs 
+
+- Currently working on increasing performance using CUDA graphs and compiling into MLIR and XLA
+
+---
+
 .left-column50[
 - Version control
 
@@ -264,6 +275,18 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
      style="width: 100%;"/>
 
 more info at [nordic-rse.org/nrse2026](https://nordic-rse.org/nrse2026/)
+---
+<img src="img/invited-speakers.png" style="width: 80%;"/>
+
+---
+
+&nbsp;  
+&nbsp;  
+# Har du lyst til å være med i det neste RSE-prosjektet?
+&nbsp;  
+&nbsp;  
+
+## Hvis ja, ta kontakt enten personlig eller via rse@uit.no
 ---
 class: center, middle, inverse
 
