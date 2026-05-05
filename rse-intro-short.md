@@ -212,7 +212,12 @@ rewrite from Matlab to Python+Rust using a more optimal algorithm
 
 ---
 
-# Example 4
+# Example 4 
+<img src="img/heterogeneous-arrays.png" style="width: 100%;"/>
+
+---
+
+# Example 5
 
 
 <img src="img/speedyweather.png" style="width: 100%;"/>
@@ -253,6 +258,7 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 **Lessons and recordings:** https://coderefinery.org/lessons/
 ]
 ---
+# Teaching at UiT
 
 ## PhD course at UiT: FYS-8805 Collaborative Coding
 
@@ -264,9 +270,56 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 
 - Next course: 25th–27th May & 11th–12th June
 
-- **Let us know if you are interested!**
+<!-- - **Let us know if you are interested!** -->
+
+## Involved in Bio-3027 / Bio-8027 and Bio-3032 / Bio-8032
+
+## Development of further teaching material
 
 
+---
+# RSE projects in 2026
+
+- Gabriel works 50% for Hylleraas Center
+- Gregor works for Fusenow project one day per week
+- Heterogeneous arrays project: 1 month of FTE
+- SpeedyWeather: 3 month of FTE
+- Svalbard Shiny app: > 6 months of FTE
+- Heterogeneous arryas Part II: ca 4 months of FTE
+- BOUT++ (upcoming project): 3 months of FTE
+- Smaller projects: 2 month of FTE
+- CodeRefinery: 1.5 months of FTE
+- Teaching courses: 1 month of FTE
+
+&nbsp;  
+
+- **Enough projects for 3 full positions**
+
+---
+
+# Our challenges
+&nbsp;  
+&nbsp;  
+
+- Visibility at UiT (despite a lot of progress over the last 2 years)
+&nbsp;  
+&nbsp;  
+
+- finding time for RSE projects and administering the RSE group 
+&nbsp;  
+&nbsp;  
+
+- **we need more people!**
+
+---
+
+&nbsp;  
+&nbsp;  
+# Har du lyst til å være med i det neste RSE-prosjektet?
+&nbsp;  
+&nbsp;  
+
+## Hvis ja, ta kontakt enten personlig eller via rse@uit.no
 
 ---
 ## UiT organizes the next Nordic RSE conference
@@ -278,15 +331,6 @@ more info at [nordic-rse.org/nrse2026](https://nordic-rse.org/nrse2026/)
 ---
 <img src="img/invited-speakers.png" style="width: 80%;"/>
 
----
-
-&nbsp;  
-&nbsp;  
-# Har du lyst til å være med i det neste RSE-prosjektet?
-&nbsp;  
-&nbsp;  
-
-## Hvis ja, ta kontakt enten personlig eller via rse@uit.no
 ---
 class: center, middle, inverse
 
