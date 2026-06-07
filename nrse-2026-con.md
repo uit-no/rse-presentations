@@ -32,9 +32,9 @@ class: gray-background
 
 - Enough projects for 3 full time RSEs
 
-- Involvement in longer-term projects, including grant applications (more info later)
+- Involvement in longer-term projects, including grant applications (more on that later)
 
-- Research stays at other RSE groups (OxRSE, University of Edinburgh)
+- Research visits: OxRSE & University of Edinburgh
 
 ---
 # New service levels
@@ -88,8 +88,7 @@ class: gray-background
 
 - Some RSEs have temporary contracts, creating uncertainty for both the RSEs and collaborators
 
-- Never underestimate time conference planning takes!
-
+- The unexpected logistical overhead of event planning (NRSE 2026)
 ---
 class: center, middle, inverse
 
