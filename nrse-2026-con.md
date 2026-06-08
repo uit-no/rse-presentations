@@ -80,7 +80,7 @@ class: gray-background
 ---
 ## Current challenges
 
-- RSE still unknown to many researchers at UiT
+- RSE still unknown to many researchers at UiT (especially at campus in Narvik, Harstad, and Alta)
 
 - Collaboration with startup incubator (Norinnova) didn't lead anywhere
 
