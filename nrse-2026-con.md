@@ -73,7 +73,7 @@ class: gray-background
 
 - FUSENOW (Trond Mohn Research Foundation / Tromsø Science Foundation) including part time RSE position for 5 years
 
-- Dedicated funding for RSE work provided by NRIS (Norwegian Research Infrastructure Services) for multiple projects (include SpeedyWeather)
+- Dedicated funding for RSE work provided by NRIS (Norwegian Research Infrastructure Services) for multiple projects (including SpeedyWeather.jl)
 
 - More to come soon!
 
