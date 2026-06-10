@@ -69,18 +69,28 @@ class: gray-background
 
 ---
 
-## Successful Grant applications
+## Current funding sources
 
+- IT department (for RSE Help Desk and individual consultations)
+
+- Hylleraas Centre for Quantum Molecular Sciences (for part time RSE position)
+
+- Norwegian Research Infrastructure Services for HPC support
+
+- RSE projects funded by research groups
+
+
+
+### Grant applications with RSE involvement:
 - FUSENOW (Trond Mohn Research Foundation / Tromsø Science Foundation) including part time RSE position for 5 years
 
 - Dedicated funding for RSE work provided by NRIS (Norwegian Research Infrastructure Services) for multiple projects (including SpeedyWeather.jl)
 
-- More to come soon!
 
 ---
 ## Current challenges
 
-- RSE still unknown to many researchers at UiT (especially at campus in Narvik, Harstad, and Alta)
+- RSE still unknown to many researchers and higher ups at UiT (especially at campus in Narvik, Harstad, and Alta)
 
 - Collaboration with startup incubator (Norinnova) didn't lead anywhere
 
@@ -89,6 +99,17 @@ class: gray-background
 - Some RSEs have temporary contracts, creating uncertainty for both the RSEs and collaborators
 
 - The unexpected logistical overhead of event planning (NRSE 2026)
+---
+## RSE@UIT 2027
+
+- Plan to employ 1 - 2 full time RSEs
+
+- Offer beginner and advanced level courses to whole university
+
+- More close and long-term collaborations with research groups/institutes
+
+- Participate in Nordic-RSE conference (Not host it!)
+
 ---
 class: center, middle, inverse
 
