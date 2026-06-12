@@ -77,11 +77,13 @@ class: gray-background
 
 - Norwegian Research Infrastructure Services for HPC support
 
+- CodeRefinery project
+
 - RSE projects funded by research groups
 
+---
 
-
-### Grant applications with RSE involvement:
+## Grant applications with RSE involvement:
 - FUSENOW (Trond Mohn Research Foundation / Tromsø Science Foundation) including part time RSE position for 5 years
 
 - Dedicated funding for RSE work provided by NRIS (Norwegian Research Infrastructure Services) for multiple projects (including SpeedyWeather.jl)
@@ -99,7 +101,9 @@ class: gray-background
 - Some RSEs have temporary contracts, creating uncertainty for both the RSEs and collaborators
 
 - The unexpected logistical overhead of event planning (NRSE 2026)
+
 ---
+
 ## RSE@UIT 2027
 
 - Plan to employ 1 - 2 full time RSEs
