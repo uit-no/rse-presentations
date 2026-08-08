@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20' # for decktape conversion to .pdff
+          node-version: '20' # for decktape conversion to .pdf
 
       - name: Check declared assets exist
         run: python3 .github/scripts/decks.py check
@@ -47,6 +47,9 @@ jobs:
             echo "repo=${{ github.repository }}" >> "$GITHUB_OUTPUT"
             echo "sha=${{ github.sha }}" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Allow Chrome's sandbox
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
       - name: Build PDFs
         env:
