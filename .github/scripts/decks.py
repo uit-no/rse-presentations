@@ -13,6 +13,7 @@ A deck is any top-level .md file starting with a cicero header block:
 """
 
 import html
+import re
 import sys
 from pathlib import Path
 
@@ -52,7 +53,9 @@ def title_of(text, fallback):
     """First markdown heading, used as the deck title on the index page."""
     for line in text.splitlines():
         if line.startswith("# "):
-            return line[2:].strip()
+            title = line[2:].strip()
+            # unwrap [text](url) links, which would otherwise show as raw markdown
+            return re.sub(r"\[([^]]*)\]\([^)]*\)", r"\1", title)
     return fallback
 
 
