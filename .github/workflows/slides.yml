@@ -1,0 +1,84 @@
+name: Slides
+
+# Pull requests: build the PDFs and throw them away, purely to catch decks that
+# render in the browser but break decktape.
+# Pushes to main: build the PDFs and publish them, with an index page, to Pages.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: slides-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # On pull requests, check out the PR head commit (not the synthetic merge
+      # commit) so decks.py sees exactly the tree that cicero renders below.
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20' # for decktape conversion to .pdff
+
+      - name: Check declared assets exist
+        run: python3 .github/scripts/decks.py check
+
+      # cicero renders any repo at any ref, so a pull request is rendered from its
+      # own head commit, on the contributor's fork if that is where it lives.
+      - name: Work out which ref cicero should render
+        id: ref
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "repo=${{ github.event.pull_request.head.repo.full_name }}" >> "$GITHUB_OUTPUT"
+            echo "sha=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "repo=${{ github.repository }}" >> "$GITHUB_OUTPUT"
+            echo "sha=${{ github.sha }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build PDFs
+        env:
+          BASE: https://cicero.pages.dev/github/${{ steps.ref.outputs.repo }}/${{ steps.ref.outputs.sha }}
+        run: |
+          mkdir -p _site/pdf
+          python3 .github/scripts/decks.py list | while read -r deck; do
+            echo "::group::$deck"
+            npx --yes decktape@3.16.1 "$BASE/$deck/" "_site/pdf/${deck%.md}.pdf"
+            echo "::endgroup::"
+          done
+          ls -lh _site/pdf
+
+      - name: Build index page
+        if: github.ref == 'refs/heads/main'
+        run: python3 .github/scripts/decks.py index _site "${{ github.repository }}" main
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
