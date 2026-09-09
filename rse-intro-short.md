@@ -63,16 +63,16 @@ class: gray-background
 
 
 ---
-
-<img src="img/rse-society.png"
-     style="width: 90%;"/>
-
----
-
-<img src="img/rse-website.png"
-     style="width: 100%;"/>
-
----
+<!---->
+<!-- <img src="img/rse-society.png" -->
+<!--      style="width: 90%;"/> -->
+<!---->
+<!-- --- -->
+<!---->
+<!-- <img src="img/rse-website.png" -->
+<!--      style="width: 100%;"/> -->
+<!---->
+<!-- --- -->
 
 # Help with improving your scripts/code
 
@@ -164,14 +164,26 @@ class: gray-background
 
 - **Individual Consultations:** <br> One-on-one with an RSE engineer <br> Initial consultation free, afterwards 600 kr/hr (5-hour minimum)
 
-- **Extended Collaborations:**  <br> Part-time or full-time contracts with the RSE group <br> Include us in your grant applications! - 600kr/hr 
+- **Extended Contracts:**  <br> Part-time or full-time contracts with the RSE group - 600 kr/hr
 
+- **Grant Application Support:** <br> Technical co-writing and software planning <br> .emph[FREE] when including RSE capacity in the project
 ---
 
 <img src="img/Help_desk_HPC_RSE.png"
      style="width: 100%;"/>
 
 ---
+class: center, middle, inverse
+
+# RSE Help Desk: 
+# Wednesday 14:00&#8209;16:00
+
+## https://research-software.uit.no/contact/
+
+## Email: rse@uit.no 
+---
+count: false
+
 # Example 1: rewrite instead of buying a 30 GB hard disk
 
 ### Problematic if data is 30 GB big
@@ -184,6 +196,8 @@ with open("data.txt", "r") as f:
         result += analyze(line)
 ```
 
+count: false
+
 
 ### Better
 
@@ -195,6 +209,8 @@ with open("data.txt", "r") as f:
 ```
 ---
 
+count: false
+
 # Example 2
 
 Speed-up of grid mesh generation for oceanography code from days to seconds by a code
@@ -203,6 +219,8 @@ rewrite from Matlab to Python+Rust using a more optimal algorithm
 <img src="img/mesh.jpg" style="width: 100%;"/>
 
 ---
+
+count: false
 
 # Example 3
 
@@ -219,10 +237,14 @@ rewrite from Matlab to Python+Rust using a more optimal algorithm
 
 ---
 
+count: false
+
 # Example 4 
 <img src="img/heterogeneous-arrays.png" style="width: 100%;"/>
 
 ---
+
+count: false
 
 # Example 5
 
@@ -234,6 +256,8 @@ rewrite from Matlab to Python+Rust using a more optimal algorithm
 - Currently working on increasing performance using CUDA graphs and compiling into MLIR and XLA
 
 ---
+
+count: false
 
 .left-column50[
 - Version control
@@ -265,6 +289,8 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 **Lessons and recordings:** https://coderefinery.org/lessons/
 ]
 ---
+count: false
+
 # Teaching at UiT
 
 ## PhD course at UiT: FYS-8805 Collaborative Coding
@@ -284,67 +310,57 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 ## Development of further teaching material
 
 
----
-# RSE projects in 2026
 
-- Gabriel works 50% for Hylleraas Center
-- Gregor works for Fusenow project one day per week
-- Heterogeneous arrays project: 1 month of FTE
-- SpeedyWeather: 3 month of FTE
-- Svalbard Shiny app: > 6 months of FTE
-- Heterogeneous arryas Part II: ca 4 months of FTE
-- BOUT++ (upcoming project): 3 months of FTE
-- Smaller projects: 2 month of FTE
-- CodeRefinery: 1.5 months of FTE
-- Teaching courses: 1 month of FTE
-
-&nbsp;  
-
-- **Enough projects for 3 full positions**
-
----
-
-# Our challenges
-&nbsp;  
-&nbsp;  
-
-- Visibility at UiT (despite a lot of progress over the last 2 years)
-&nbsp;  
-&nbsp;  
-
-- finding time for RSE projects and administering the RSE group 
-&nbsp;  
-&nbsp;  
-
-- **we need more people!**
-
----
-
-&nbsp;  
-&nbsp;  
-# Har du lyst til å være med i det neste RSE-prosjektet?
-&nbsp;  
-&nbsp;  
-
-## Hvis ja, ta kontakt enten personlig eller via rse@uit.no
-
----
-## UiT organizes the next Nordic RSE conference
-
-<img src="img/nrse-2026.png"
-     style="width: 100%;"/>
-
-more info at [nordic-rse.org/nrse2026](https://nordic-rse.org/nrse2026/)
----
-<img src="img/invited-speakers.png" style="width: 80%;"/>
-
----
-class: center, middle, inverse
-
-# RSE Help Desk: 
-# Wednesday 14:00&#8209;16:00
-
-## https://research-software.uit.no/contact/
-
-## Email: rse@uit.no 
-
+<!-- # RSE projects in 2026 -->
+<!---->
+<!-- - Gabriel works 50% for Hylleraas Center -->
+<!-- - Gregor works for Fusenow project one day per week -->
+<!-- - Heterogeneous arrays project: 1 month of FTE -->
+<!-- - SpeedyWeather: 3 month of FTE -->
+<!-- - Svalbard Shiny app: > 6 months of FTE -->
+<!-- - Heterogeneous arryas Part II: ca 4 months of FTE -->
+<!-- - BOUT++ (upcoming project): 3 months of FTE -->
+<!-- - Smaller projects: 2 month of FTE -->
+<!-- - CodeRefinery: 1.5 months of FTE -->
+<!-- - Teaching courses: 1 month of FTE -->
+<!---->
+<!-- &nbsp;   -->
+<!---->
+<!-- - **Enough projects for 3 full positions** -->
+<!---->
+<!-- --- -->
+<!---->
+<!-- # Our challenges -->
+<!-- &nbsp;   -->
+<!-- &nbsp;   -->
+<!---->
+<!-- - Visibility at UiT (despite a lot of progress over the last 2 years) -->
+<!-- &nbsp;   -->
+<!-- &nbsp;   -->
+<!---->
+<!-- - finding time for RSE projects and administering the RSE group  -->
+<!-- &nbsp;   -->
+<!-- &nbsp;   -->
+<!---->
+<!-- - **we need more people!** -->
+<!---->
+<!-- --- -->
+<!---->
+<!-- &nbsp;   -->
+<!-- &nbsp;   -->
+<!-- # Har du lyst til å være med i det neste RSE-prosjektet? -->
+<!-- &nbsp;   -->
+<!-- &nbsp;   -->
+<!---->
+<!-- ## Hvis ja, ta kontakt enten personlig eller via rse@uit.no -->
+<!---->
+<!-- --- -->
+<!-- ## UiT organizes the next Nordic RSE conference -->
+<!---->
+<!-- <img src="img/nrse-2026.png" -->
+<!--      style="width: 100%;"/> -->
+<!---->
+<!-- more info at [nordic-rse.org/nrse2026](https://nordic-rse.org/nrse2026/) -->
+<!-- --- -->
+<!-- <img src="img/invited-speakers.png" style="width: 80%;"/> -->
+<!---->
